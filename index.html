@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Neat Fleet Laundry — Fast. Fresh. Affordable.</title>
   <meta name="description" content="Laundry pickup and delivery in New Castle & Kent County, DE — Wilmington through Dover. Friday pickups, Saturday drop-offs. Fast. Fresh. Affordable." />
-  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="icon" type="image/svg+xml" href="assets/icon-mark.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
   <header class="glass">
     <div class="container nav">
       <a class="brand" href="#">
-        <img class="brand-logo" src="assets/logo.png" alt="Neat Fleet Laundry logo" />
+        <img class="brand-mark" src="assets/icon-mark.svg" alt="" aria-hidden="true"/>
         <h3>Neat Fleet Laundry</h3>
       </a>
       <nav>
@@ -38,13 +38,13 @@
           <a class="btn outline" href="#pricing">See Pricing</a>
         </div>
         <ul class="hero-proofs">
-          <li><img src="assets/icon-check.svg" alt="check"> Hypoallergenic options</li>
-          <li><img src="assets/icon-check.svg" alt="check"> Doorstep pickup & delivery</li>
-          <li><img src="assets/icon-check.svg" alt="check"> Transparent pricing</li>
+          <li><img src="assets/icon-check.svg" alt=""> Hypoallergenic options</li>
+          <li><img src="assets/icon-check.svg" alt=""> Doorstep pickup & delivery</li>
+          <li><img src="assets/icon-check.svg" alt=""> Transparent pricing</li>
         </ul>
       </div>
       <div class="hero-illus">
-        <img src="assets/hero-van.svg" alt="Delivery van and folded laundry illustration" />
+        <img src="assets/icon-mark.svg" alt="Round wave logo" style="width:100%;max-width:420px;display:block;margin:0 auto"/>
         <div class="stats">
           <div><strong>24–48h</strong><span>Turnaround</span></div>
           <div><strong>10lb</strong><span>Min order</span></div>
@@ -59,28 +59,12 @@
       <h2 class="section-h">How it works</h2>
       <p class="muted">Four simple steps to fresher laundry.</p>
       <div class="grid-3">
-        <div class="card step">
-          <img src="assets/icon-schedule.svg" alt="schedule icon" class="ico">
-          <div><h3>Schedule</h3><p>Pick a <strong>Friday</strong> pickup window for your city. We’ll confirm your exact slot based on our north‑to‑south route.</p></div>
-        </div>
-        <div class="card step">
-          <img src="assets/icon-pickup.svg" alt="pickup icon" class="ico">
-          <div><h3>Pickup</h3><p>Doorstep pickup — no need to be home. We’ll text when we’re on the way.</p></div>
-        </div>
-        <div class="card step">
-          <img src="assets/icon-wash.svg" alt="wash icon" class="ico">
-          <div><h3>Wash & Fold</h3><p>Standard, fragrance‑free, or hypoallergenic detergents. Neatly folded, bagged, and ready.</p></div>
-        </div>
-        <div class="card step">
-          <img src="assets/icon-delivery.svg" alt="delivery icon" class="ico">
-          <div><h3>Delivery</h3><p><strong>Saturday drop‑off</strong>. We’ll deliver on the same north‑to‑south route.</p></div>
-        </div>
-        <div class="card">
-          <h3>Subscriptions</h3><p>Go weekly or biweekly and save 10% automatically — perfect for busy households.</p>
-        </div>
-        <div class="card">
-          <h3>Support</h3><p>Local team based in Wilmington, DE. Real people ready to help.</p>
-        </div>
+        <div class="card step"><img src="assets/icon-schedule.svg" class="ico" alt=""><div><h3>Schedule</h3><p>Pick a <strong>Friday</strong> pickup window for your city. We’ll confirm your exact slot based on our north‑to‑south route.</p></div></div>
+        <div class="card step"><img src="assets/icon-pickup.svg" class="ico" alt=""><div><h3>Pickup</h3><p>Doorstep pickup — no need to be home. We’ll text when we’re on the way.</p></div></div>
+        <div class="card step"><img src="assets/icon-wash.svg" class="ico" alt=""><div><h3>Wash & Fold</h3><p>Standard, fragrance‑free, or hypoallergenic detergents. Neatly folded, bagged, and ready.</p></div></div>
+        <div class="card step"><img src="assets/icon-delivery.svg" class="ico" alt=""><div><h3>Delivery</h3><p><strong>Saturday drop‑off</strong>. We’ll deliver on the same north‑to‑south route.</p></div></div>
+        <div class="card"><h3>Subscriptions</h3><p>Go weekly or biweekly and save 10% automatically — perfect for busy households.</p></div>
+        <div class="card"><h3>Support</h3><p>Local team based in Wilmington, DE. Real people ready to help.</p></div>
       </div>
     </div>
   </section>
@@ -172,7 +156,7 @@
           </select>
 
           <label for="zip">ZIP code</label>
-          <input id="zip" name="zip" pattern="\d5" placeholder="e.g., 19802" />
+          <input id="zip" name="zip" pattern="\d{5}" placeholder="e.g., 19802" />
 
           <label for="window">Preferred pickup window (Friday)</label>
           <p class="note" data-cityhint>Choose the window that matches your city zone below.</p>
@@ -214,7 +198,7 @@
     <div class="container foot">
       <div>
         <div class="brand-mark">
-          <img class="brand-logo" src="assets/logo.png" alt="Neat Fleet Laundry logo" />
+          <img class="brand-mark" src="assets/icon-mark.svg" alt="" aria-hidden="true"/>
           <div>
             <strong>Neat Fleet Laundry</strong><br/>
             Fast. Fresh. Affordable.
