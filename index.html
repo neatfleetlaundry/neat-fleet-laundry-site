@@ -15,7 +15,7 @@
   <header class="glass">
     <div class="container nav">
       <a class="brand" href="#">
-        <img class="brand-mark" src="assets/logo-circle-exact.png" alt="Neat Fleet Laundry wave logo" />
+        <img class="brand-mark" src="assets/icon-mark.svg" alt="Neat Fleet Laundry logo mark" />
         <h3>Neat Fleet Laundry</h3>
       </a>
       <nav>
@@ -44,7 +44,7 @@
         </ul>
       </div>
       <div class="hero-illus">
-        <img src="assets/logo-circle-exact.png" alt="Wave logo" style="width:100%;max-width:360px;display:block;margin:0 auto;border-radius:20px;border:1px solid #e7edf5;box-shadow:0 24px 48px rgba(15,42,74,.08)"/>
+        <img src="assets/icon-mark.svg" alt="Wave circle logo" style="width:100%;max-width:360px;display:block;margin:0 auto;"/>
       </div>
     </div>
   </section>
@@ -59,7 +59,7 @@
         <div class="card step"><img src="assets/icon-wash.svg" class="ico" alt=""><div><h3>Wash & Fold</h3><p>Standard, fragrance‑free, or hypoallergenic detergents. Neatly folded, bagged, and ready.</p></div></div>
         <div class="card step"><img src="assets/icon-delivery.svg" class="ico" alt=""><div><h3>Delivery</h3><p><strong>Saturday drop‑off</strong>. We’ll deliver on the same north‑to‑south route.</p></div></div>
         <div class="card"><h3>Subscriptions</h3><p>Go weekly or biweekly and save 10% automatically — perfect for busy households.</p></div>
-        <div class="card"><h3>Support</h3><p>Local team based in Wilmington, DE. Real people ready to help.</p></div>
+        <div class="card"><h3>Support</</p></div>
       </div>
     </div>
   </section>
@@ -190,36 +190,14 @@
   </section>
 
   <footer>
-    <div class="container foot">
-      <div>
-        <div class="brand-mark">
-          <img class="brand-mark" src="assets/logo-circle-exact.png" alt="Neat Fleet Laundry wave logo" />
-          <div>
-            <strong>Neat Fleet Laundry</strong><br/>
-            Fast. Fresh. Affordable.
-          </div>
-        </div>
-        <p class="note" style="color:#a8b6c9;margin-top:10px">A division of Neat Fleet Delivery Co., LLC</p>
-      </div>
-      <div>
-        <h4 style="margin:0 0 8px;color:#eaf2fb">Contact</h4>
-        <p style="margin:0 0 6px">Wilmington → Dover, DE</p>
-        <p style="margin:0 0 6px"><a href="tel:+13159164043">(315) 916‑4043</a> (calls/texts)</p>
-        <p style="margin:0 0 6px"><a href="mailto:neatfleetbooking@gmail.com">neatfleetbooking@gmail.com</a></p>
-      </div>
-      <div>
-        <h4 style="margin:0 0 8px;color:#eaf2fb">Links</h4>
-        <p style="margin:0 0 6px"><a href="#pricing">Pricing</a></p>
-        <p style="margin:0 0 6px"><a href="#how">How it works</a></p>
-        <p style="margin:0 0 6px"><a href="#schedule">Book pickup</a></p>
-      </div>
-    </div>
     <div class="container legal">
       <small>© <span id="y"></span> Neat Fleet Delivery Co. All rights reserved.</small>
       <small><a href="#">Terms</a> • <a href="#">Privacy</a></small>
     </div>
   </footer>
 
-  <script src="app.js"></script>
+  <script>
+    document.getElementById('y') && (document.getElementById('y').textContent = new Date().getFullYear());
+  </script>
 </body>
 </html>
