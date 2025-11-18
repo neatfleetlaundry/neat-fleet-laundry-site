@@ -26,6 +26,12 @@
       </nav>
     </div>
   </header>
+  <div class="promo-bar">
+    <div class="container">
+      <p><strong>New customers:</strong> 50% off your first laundry pickup when you book online.</p>
+    </div>
+  </div>
+
 
   <section class="hero fancy-bg">
     <div class="container wrap">
@@ -67,7 +73,7 @@
   <section id="pricing" class="pricing">
     <div class="container">
       <h2 class="section-h">Simple, transparent pricing</h2>
-      <p class="muted">Serving New Castle & Kent County — Wilmington through Dover. City‑specific pickup windows on Fridays.</p>
+      <p class="muted">Serving New Castle & Kent County — from Wilmington to Dover. Friday pickups follow a north‑to‑south route, and <strong>pricing stays the same</strong> no matter which city you’re in.</p>
       <div class="plans">
         <div class="plan highlight">
           <span class="pill">Most Popular</span>
@@ -106,6 +112,41 @@
       </div>
     </div>
   </section>
+  <section id="why">
+    <div class="container">
+      <h2 class="section-h">Why choose Neat Fleet?</h2>
+      <p class="muted">We make laundry day easier for busy households, professionals, and students across New Castle & Kent County.</p>
+      <div class="grid-3">
+        <div class="card">
+          <h3>vs. the laundromat</h3>
+          <ul class="checklist">
+            <li><img src="assets/icon-check.svg" alt=""> No waiting around for machines or folding tables.</li>
+            <li><img src="assets/icon-check.svg" alt=""> Doorstep pickup and delivery built around our Friday route.</li>
+            <li><img src="assets/icon-check.svg" alt=""> Clear per‑pound pricing — no surprise fees.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>vs. doing it yourself</h3>
+          <ul class="checklist">
+            <li><img src="assets/icon-check.svg" alt=""> Save hours each week on washing, drying, and folding.</li>
+            <li><img src="assets/icon-check.svg" alt=""> Commercial‑grade equipment and consistent results.</li>
+            <li><img src="assets/icon-check.svg" alt=""> Same rate whether you’re in Wilmington or Dover.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Built for our route</h3>
+          <ul class="checklist">
+            <li><img src="assets/icon-check.svg" alt=""> North‑to‑south Friday pickups, Saturday delivery.</li>
+            <li><img src="assets/icon-check.svg" alt=""> City‑specific windows so you know when to expect us.</li>
+            <li><img src="assets/icon-check.svg" alt=""> Local, owner‑operated service with real support.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
 
   <section id="reviews">
     <div class="container">
@@ -118,13 +159,48 @@
     </div>
   </section>
 
-  <section id="schedule">
+  
+  <section id="faq">
+    <div class="container">
+      <h2 class="section-h">Frequently asked questions</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>When do you pick up and deliver?</h3>
+          <p class="muted">We collect on <strong>Fridays</strong> along our north‑to‑south route and typically deliver back on <strong>Saturdays</strong>. Your exact window depends on your city.</p>
+        </div>
+        <div class="card">
+          <h3>What if I miss my pickup?</h3>
+          <p class="muted">If we miss you, we’ll text you to reschedule the next available route. You’re never charged if we don’t collect your laundry.</p>
+        </div>
+        <div class="card">
+          <h3>Do Wilmington & Dover pay different prices?</h3>
+          <p class="muted">No. Pricing is the same for all cities on our route — Wilmington through Dover — as long as you’re within our posted service area.</p>
+        </div>
+        <div class="card">
+          <h3>What detergents do you use?</h3>
+          <p class="muted">We use high‑quality, commercial detergents with <strong>fragrance‑free and hypoallergenic</strong> options. Tell us your preferences in the notes.</p>
+        </div>
+        <div class="card">
+          <h3>How should I bag my laundry?</h3>
+          <p class="muted">Place items in a sturdy bag or hamper you don’t mind us taking. We’ll return everything neatly folded in clean bags.</p>
+        </div>
+        <div class="card">
+          <h3>How do I get started?</h3>
+          <p class="muted">Book your slot using the form below. We’ll confirm by text or email with your exact pickup window.</p>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:18px">Want more details? Visit our full <a href="faq.html">FAQ page</a>.</p>
+    </div>
+  </section>
+
+
+<section id="schedule">
     <div class="container schedule">
       <div>
         <h2 class="section-h">Book your Friday pickup</h2>
         <p class="muted">We’ll confirm your exact time based on our <strong>north → south</strong> route (Arden/Claymont at <strong>7:00 AM</strong> down to Camden/Dover). This form is powered by <strong>Netlify Forms</strong> and will send your request to our inbox.</p>
 
-        <form name="pickup" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="success.html">
+        <form name="pickup" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
           <input type="hidden" name="form-name" value="pickup" />
           <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
 
@@ -143,11 +219,26 @@
           <label for="city">City</label>
           <select id="city" name="city" required>
             <option value="">Choose…</option>
-            <option>Arden</option><option>Claymont</option><option>Bellefonte</option><option>Edgemoor</option><option>Wilmington</option>
-            <option>Hockessin</option><option>Elsmere</option><option>Marshallton</option><option>Newport</option><option>Newark</option>
-            <option>Wilmington (again)</option><option>Manor</option><option>New Castle</option><option>Bear</option><option>Glasgow</option>
-            <option>Delaware City</option><option>Port Penn</option><option>Odessa</option><option>Middletown</option>
-            <option>Camden</option><option>Dover</option><option>(Kent County)</option>
+            <option>Arden</option>
+            <option>Claymont</option>
+            <option>Bellefonte</option>
+            <option>Edgemoor</option>
+            <option>Wilmington</option>
+            <option>Hockessin</option>
+            <option>Elsmere</option>
+            <option>Marshallton</option>
+            <option>Newport</option>
+            <option>Newark</option>
+            <option>Manor</option>
+            <option>New Castle</option>
+            <option>Bear</option>
+            <option>Glasgow</option>
+            <option>Delaware City</option>
+            <option>Port Penn</option>
+            <option>Odessa</option>
+            <option>Middletown</option>
+            <option>Camden</option>
+            <option>Dover (Kent County)</option>
           </select>
 
           <label for="zip">ZIP code</label>
@@ -196,8 +287,20 @@
     </div>
   </footer>
 
+  
   <script>
     document.getElementById('y') && (document.getElementById('y').textContent = new Date().getFullYear());
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor){
+      anchor.addEventListener('click', function(e){
+        var targetId = this.getAttribute('href').slice(1);
+        var target = document.getElementById(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
   </script>
 </body>
 </html>
+

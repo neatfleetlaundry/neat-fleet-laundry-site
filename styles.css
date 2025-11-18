@@ -68,3 +68,19 @@ footer a{color:#e6f4ff}
   .grid-3, .plans, .schedule, .reviews, .foot{grid-template-columns:1fr}
   .brand-mark{height:32px;width:32px}
 }
+
+
+.promo-bar{
+  background: var(--teal);
+  color: #ffffff;
+  padding: 8px 0;
+}
+.promo-bar p{
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+.promo-bar strong{
+  font-weight: 700;
+}
