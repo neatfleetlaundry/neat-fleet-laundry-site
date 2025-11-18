@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="navy">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thanks for booking — Neat Fleet Laundry</title>
+  <meta name="description" content="Thank you for booking your laundry pickup with Neat Fleet Laundry." />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="glass">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/icon-mark.svg" alt="Neat Fleet Laundry logo mark" />
+        <h3>Neat Fleet Laundry</h3>
+      </a>
+      <nav>
+        <a href="index.html#how">How it works</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="faq.html">FAQs</a>
+        <a href="service-area.html">Service area</a>
+        <a href="index.html#schedule" class="btn" style="padding:10px 14px">Book Pickup</a>
+      </nav>
+    </div>
+  </header>
+  <div class="promo-bar">
+    <div class="container">
+      <p><strong>New customers:</strong> 50% off your first laundry pickup when you book online.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <h1 class="section-h">We’ve received your request 🎉</h1>
+      <p class="muted">Thank you for booking your laundry pickup with Neat Fleet Laundry. We’ll review your details and confirm your exact pickup window by text or email.</p>
+      <div class="grid-3">
+        <div class="card">
+          <h3>What happens next?</h3>
+          <p>We’ll match your address to our Friday route and send you a confirmation with your estimated pickup time.</p>
+        </div>
+        <div class="card">
+          <h3>Getting ready</h3>
+          <p>Place your laundry in a sturdy bag or hamper you don’t mind us taking. Label it “Neat Fleet” if you share a porch or entry.</p>
+        </div>
+        <div class="card">
+          <h3>Need to change something?</h3>
+          <p>If you need to update your details or reschedule, reply to your confirmation message or contact us directly.</p>
+        </div>
+      </div>
+      <p style="margin-top:24px"><a class="btn" href="index.html">Back to home</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container foot">
+      <div>
+        <div class="brand-mark-row">
+          <img class="brand-mark" src="assets/icon-mark.svg" alt="Neat Fleet Laundry logo mark" />
+          <span>Neat Fleet Laundry</span>
+        </div>
+        <p class="muted">Laundry pickup and delivery from Wilmington to Dover — Fast. Fresh. Affordable.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p class="muted">Phone: 315-916-4043<br/>Email: neatfleetlaundry@gmail.com</p>
+      </div>
+      <div>
+        <h4>Service</h4>
+        <p class="muted">New Castle & Kent County, DE<br/>Friday pickups, Saturday delivery.</p>
+      </div>
+    </div>
+    <div class="container legal">
+      <small>© <span id="y"></span> Neat Fleet Delivery Co. All rights reserved.</small>
+      <small><a href="#">Terms</a> • <a href="#">Privacy</a></small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y') && (document.getElementById('y').textContent = new Date().getFullYear());
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor){
+      anchor.addEventListener('click', function(e){
+        var targetId = this.getAttribute('href').slice(1);
+        var target = document.getElementById(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

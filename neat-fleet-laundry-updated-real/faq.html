@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="navy">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neat Fleet Laundry FAQs — Pickup, pricing, and detergents</title>
+  <meta name="description" content="Answers to common questions about Neat Fleet Laundry service, pickup windows, pricing, detergents, and more." />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="glass">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/icon-mark.svg" alt="Neat Fleet Laundry logo mark" />
+        <h3>Neat Fleet Laundry</h3>
+      </a>
+      <nav>
+        <a href="index.html#how">How it works</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="faq.html">FAQs</a>
+        <a href="service-area.html">Service area</a>
+        <a href="index.html#schedule" class="btn" style="padding:10px 14px">Book Pickup</a>
+      </nav>
+    </div>
+  </header>
+  <div class="promo-bar">
+    <div class="container">
+      <p><strong>New customers:</strong> 50% off your first laundry pickup when you book online.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <h1 class="section-h">Frequently asked questions</h1>
+      <div class="grid-3">
+        <div class="card">
+          <h3>What areas do you serve?</h3>
+          <p class="muted">We currently serve much of New Castle County (from Arden and Claymont through Newark and Middletown) and continue south into Kent County, including Camden and Dover.</p>
+        </div>
+        <div class="card">
+          <h3>What days do you pick up and deliver?</h3>
+          <p class="muted">Pickups are on <strong>Fridays</strong>, following a north‑to‑south route. Most orders are delivered back on <strong>Saturdays</strong>, neatly folded and bagged.</p>
+        </div>
+        <div class="card">
+          <h3>How do pickup windows work?</h3>
+          <p class="muted">When you book, you’ll choose a city‑based window (for example, 7–9 AM in Wilmington or 3–6 PM in Kent County). We’ll confirm your exact timing by text or email.</p>
+        </div>
+        <div class="card">
+          <h3>Do you charge more for Dover?</h3>
+          <p class="muted">No. Pricing is the same across our route — from Wilmington to Dover — as long as you’re within our posted service area.</p>
+        </div>
+        <div class="card">
+          <h3>What if I’m not home?</h3>
+          <p class="muted">You can leave laundry in a safe, weather‑protected spot and note this in your booking. If we can’t safely collect it, we’ll contact you to reschedule.</p>
+        </div>
+        <div class="card">
+          <h3>What should I put my laundry in?</h3>
+          <p class="muted">A sturdy bag or hamper you don’t mind us taking works great. We’ll return your items neatly folded in clean bags.</p>
+        </div>
+        <div class="card">
+          <h3>Do you offer subscriptions?</h3>
+          <p class="muted">Yes. Weekly or bi‑weekly routes are available. Regular customers can receive an automatic discount on recurring service.</p>
+        </div>
+        <div class="card">
+          <h3>What detergents do you use?</h3>
+          <p class="muted">We use quality commercial detergents with fragrance‑free and hypoallergenic options. Add any sensitivities or requests in the notes when you book.</p>
+        </div>
+        <div class="card">
+          <h3>How do I get started?</h3>
+          <p class="muted">Fill out the booking form on our home page with your city, preferred window, and contact details. We’ll confirm your pickup and keep you updated along the way.</p>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:24px">Still have questions? Reach out at <a href="mailto:neatfleetlaundry@gmail.com">neatfleetlaundry@gmail.com</a> or call 315‑916‑4043.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container foot">
+      <div>
+        <div class="brand-mark-row">
+          <img class="brand-mark" src="assets/icon-mark.svg" alt="Neat Fleet Laundry logo mark" />
+          <span>Neat Fleet Laundry</span>
+        </div>
+        <p class="muted">Laundry pickup and delivery from Wilmington to Dover — Fast. Fresh. Affordable.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p class="muted">Phone: 315-916-4043<br/>Email: neatfleetlaundry@gmail.com</p>
+      </div>
+      <div>
+        <h4>Service</h4>
+        <p class="muted">New Castle & Kent County, DE<br/>Friday pickups, Saturday delivery.</p>
+      </div>
+    </div>
+    <div class="container legal">
+      <small>© <span id="y"></span> Neat Fleet Delivery Co. All rights reserved.</small>
+      <small><a href="#">Terms</a> • <a href="#">Privacy</a></small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y') && (document.getElementById('y').textContent = new Date().getFullYear());
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor){
+      anchor.addEventListener('click', function(e){
+        var targetId = this.getAttribute('href').slice(1);
+        var target = document.getElementById(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
