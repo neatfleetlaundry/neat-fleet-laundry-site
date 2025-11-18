@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="navy">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neat Fleet Laundry FAQs — Pickup, pricing, detergents</title>
+  <meta name="description" content="Answers to common questions about Neat Fleet Laundry pickup windows, missed pickups, pricing, and detergents for Wilmington & Dover customers." />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="glass">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <img class="brand-mark" src="assets/icon-mark.svg" alt="Neat Fleet Laundry logo mark" />
+        <h3>Neat Fleet Laundry</h3>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQs</a>
+        <a href="service-area.html">Service Area</a>
+        <a href="index.html#schedule" class="btn" style="padding:10px 14px">Book Pickup</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="promo-bar">
+    <div class="container">
+      <p><strong>New customers:</strong> 50% off your first laundry pickup when you book online.</p>
+    </div>
+  </div>
+
+
+  <section>
+    <div class="container">
+      <h1 class="section-h">Frequently asked questions</h1>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Which areas do you serve?</h3>
+          <p>We currently serve New Castle County (Wilmington‑area) and Kent County (Dover‑area) along our Friday north‑to‑south route.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What days do you pick up and deliver?</h3>
+          <p>Pickups are on Friday, and deliveries are typically on Saturday. Your exact pickup window depends on your city; you’ll see the options when you book.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do Wilmington and Dover customers pay the same price?</h3>
+          <p>Yes. Our wash &amp; fold price is the same across our route. We don’t add extra delivery fees just because you’re further south.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I leave my laundry outside?</h3>
+          <p>Yes. Many customers leave their bag on a porch or in a designated spot. Just let us know in the notes so our driver knows where to look.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What should I put my laundry in?</h3>
+          <p>You can use a hamper, reusable bag, or sturdy trash bag. We’ll return your laundry neatly folded and bagged.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you offer subscriptions?</h3>
+          <p>Yes. Weekly or bi‑weekly pickups are available and are a great fit for busy households or shared apartments. Mention that you’re interested in a subscription in your booking notes.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What detergents do you use?</h3>
+          <p>We use quality detergents with fragrance‑free and hypoallergenic options. If you have sensitivities, list them in your notes so we can select the best option for you.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I get started?</h3>
+          <p>Just visit the home page and click “Book Pickup”. Fill out the form with your address, city, and preferred window, and we’ll confirm by email or text.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer>
+    <div class="container legal">
+      <small>© <span id="y"></span> Neat Fleet Delivery Co. All rights reserved.</small>
+      <small><a href="#">Terms</a> • <a href="#">Privacy</a></small>
+    </div>
+  </footer>
+  <script>
+    // Set copyright year
+    document.getElementById('y') && (document.getElementById('y').textContent = new Date().getFullYear());
+    // Smooth scroll for in-page anchors
+    document.querySelectorAll('a[href^="#"], a[href^="index.html#"]').forEach(function(anchor){
+      anchor.addEventListener('click', function(e){
+        var href = this.getAttribute('href');
+        var targetId = href.replace('index.html', '').replace('#','');
+        var target = document.getElementById(targetId);
+        if(target){
+          e.preventDefault();
+          target.scrollIntoView({behavior:'smooth'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="navy">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Neat Fleet Laundry — Wilmington & Dover laundry pickup</title>
+  <meta name="description" content="Learn more about Neat Fleet Laundry, a local pickup and delivery laundry service serving Wilmington through Dover with simple, route-based pricing." />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="glass">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <img class="brand-mark" src="assets/icon-mark.svg" alt="Neat Fleet Laundry logo mark" />
+        <h3>Neat Fleet Laundry</h3>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQs</a>
+        <a href="service-area.html">Service Area</a>
+        <a href="index.html#schedule" class="btn" style="padding:10px 14px">Book Pickup</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="promo-bar">
+    <div class="container">
+      <p><strong>New customers:</strong> 50% off your first laundry pickup when you book online.</p>
+    </div>
+  </div>
+
+
+  <section>
+    <div class="container">
+      <h1 class="section-h">About Neat Fleet Laundry</h1>
+      <p class="muted">Neat Fleet Laundry is a local pickup and delivery laundry service serving New Castle and Kent County, from North Wilmington down through Dover.</p>
+      <p>We’re built around a simple idea: <strong>make laundry day disappear</strong> for busy households and professionals. Instead of spending hours sorting, washing, drying, and folding, you can leave a bag by the door and get everything back neatly folded and ready to put away.</p>
+      <div class="grid-3" style="margin-top:18px;">
+        <div class="card">
+          <h3>Local &amp; route-based</h3>
+          <p>We follow a consistent north‑to‑south route every Friday, starting in North Wilmington and ending in Dover. That keeps our pricing fair whether you’re closer to Wilmington or closer to Dover.</p>
+        </div>
+        <div class="card">
+          <h3>Fast turnaround</h3>
+          <p>Most orders are picked up on Friday and delivered on Saturday, so you’re never without your essentials for long. Rush options may be available depending on the week.</p>
+        </div>
+        <div class="card">
+          <h3>Care for your clothes</h3>
+          <p>We treat your laundry as if it were our own. We offer fragrance‑free and hypoallergenic options and pay attention to special instructions noted in your booking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer>
+    <div class="container legal">
+      <small>© <span id="y"></span> Neat Fleet Delivery Co. All rights reserved.</small>
+      <small><a href="#">Terms</a> • <a href="#">Privacy</a></small>
+    </div>
+  </footer>
+  <script>
+    // Set copyright year
+    document.getElementById('y') && (document.getElementById('y').textContent = new Date().getFullYear());
+    // Smooth scroll for in-page anchors
+    document.querySelectorAll('a[href^="#"], a[href^="index.html#"]').forEach(function(anchor){
+      anchor.addEventListener('click', function(e){
+        var href = this.getAttribute('href');
+        var targetId = href.replace('index.html', '').replace('#','');
+        var target = document.getElementById(targetId);
+        if(target){
+          e.preventDefault();
+          target.scrollIntoView({behavior:'smooth'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>
